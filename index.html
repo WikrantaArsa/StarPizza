@@ -33,7 +33,17 @@ label, .form-check-label {
   background-color: #2563eb;
   border-color: #2563eb;
 }
+/* Custom styles for checkboxes */
+.form-check-input:checked + .form-check-label {
+    background-color: #b6d6f1;
+    padding-left: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
 </style>
+
+
   </head>
 <body>
 
@@ -91,9 +101,9 @@ label, .form-check-label {
                 <div id="pizzaDetail" style="display:none;">
                   <!-- Semua pilihan pizza di sini -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza1" value="Pizza Saussage Bites">
-                    <label class="form-check-label fw-bold" for="pizza1">Pizza Saussage Bites</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza1" value="Pizza Saussage Bites">
+                    <label class="form-check-label fw-bold ms-2" for="pizza1">Pizza Saussage Bites</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza1_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -104,9 +114,9 @@ label, .form-check-label {
                   </div>
                   <!-- 2 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza2" value="Pizza Crown Nugget">
-                    <label class="form-check-label fw-bold" for="pizza2">Pizza Crown Nugget</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza2" value="Pizza Crown Nugget">
+                    <label class="form-check-label fw-bold ms-2" for="pizza2">Pizza Crown Nugget</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza2_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -117,9 +127,9 @@ label, .form-check-label {
                   </div>
                   <!-- 3 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza3" value="Pizza Chicken Lover">
-                    <label class="form-check-label fw-bold" for="pizza3">Pizza Chicken Lover</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza3" value="Pizza Chicken Lover">
+                    <label class="form-check-label fw-bold ms-2" for="pizza3">Pizza Chicken Lover</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza3_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -130,9 +140,9 @@ label, .form-check-label {
                   </div>
                   <!-- 4 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza4" value="Pizza Meat Lover">
-                    <label class="form-check-label fw-bold" for="pizza4">Pizza Meat Lover</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza4" value="Pizza Meat Lover">
+                    <label class="form-check-label fw-bold ms-2" for="pizza4">Pizza Meat Lover</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza4_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -143,9 +153,9 @@ label, .form-check-label {
                   </div>
                   <!-- 5 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza5" value="Pizza Lava Cheese">
-                    <label class="form-check-label fw-bold" for="pizza5">Pizza Lava Cheese</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza5" value="Pizza Lava Cheese">
+                    <label class="form-check-label fw-bold ms-2" for="pizza5">Pizza Lava Cheese</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza5_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -156,9 +166,9 @@ label, .form-check-label {
                   </div>
                   <!-- 6 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza6" value="Pizza Creamy Mushroom">
-                    <label class="form-check-label fw-bold" for="pizza6">Pizza Creamy Mushroom</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza6" value="Pizza Creamy Mushroom">
+                    <label class="form-check-label fw-bold ms-2" for="pizza6">Pizza Creamy Mushroom</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza6_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -169,9 +179,9 @@ label, .form-check-label {
                   </div>
                   <!-- 7 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza7" value="Pizza Chicken Mushroom">
-                    <label class="form-check-label fw-bold" for="pizza7">Pizza Chicken Mushroom</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza7" value="Pizza Chicken Mushroom">
+                    <label class="form-check-label fw-bold ms-2" for="pizza7">Pizza Chicken Mushroom</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza7_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -182,9 +192,9 @@ label, .form-check-label {
                   </div>
                   <!-- 8 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza8" value="Pizza Seafood">
-                    <label class="form-check-label fw-bold" for="pizza8">Pizza Seafood</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza8" value="Pizza Seafood">
+                    <label class="form-check-label fw-bold ms-2" for="pizza8">Pizza Seafood</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza8_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -195,9 +205,9 @@ label, .form-check-label {
                   </div>
                   <!-- 9 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza9" value="Pizza Beef Lover">
-                    <label class="form-check-label fw-bold" for="pizza9">Pizza Beef Lover</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza9" value="Pizza Beef Lover">
+                    <label class="form-check-label fw-bold ms-2" for="pizza9">Pizza Beef Lover</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza9_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -208,9 +218,9 @@ label, .form-check-label {
                   </div>
                   <!-- 10 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza10" value="Pizza Black Papper">
-                    <label class="form-check-label fw-bold" for="pizza10">Pizza Black Papper</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza10" value="Pizza Black Papper">
+                    <label class="form-check-label fw-bold ms-2" for="pizza10">Pizza Black Papper</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza10_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -221,9 +231,9 @@ label, .form-check-label {
                   </div>
                   <!-- 11 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza11" value="Pizza Beef Pepperoni">
-                    <label class="form-check-label fw-bold" for="pizza11">Pizza Beef Pepperoni</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza11" value="Pizza Beef Pepperoni">
+                    <label class="form-check-label fw-bold ms-2" for="pizza11">Pizza Beef Pepperoni</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza11_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -234,9 +244,9 @@ label, .form-check-label {
                   </div>
                   <!-- 12 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza12" value="Pizza Spicy Tuna">
-                    <label class="form-check-label fw-bold" for="pizza12">Pizza Spicy Tuna</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza12" value="Pizza Spicy Tuna">
+                    <label class="form-check-label fw-bold ms-2" for="pizza12">Pizza Spicy Tuna</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza12_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -247,9 +257,9 @@ label, .form-check-label {
                   </div>
                   <!-- 13 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza13" value="Pizza Vegetarian">
-                    <label class="form-check-label fw-bold" for="pizza13">Pizza Vegetarian</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza13" value="Pizza Vegetarian">
+                    <label class="form-check-label fw-bold ms-2" for="pizza13">Pizza Vegetarian</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza13_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -260,9 +270,9 @@ label, .form-check-label {
                   </div>
                   <!-- 14 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza14" value="Pizza Cheese Lover">
-                    <label class="form-check-label fw-bold" for="pizza14">Pizza Cheese Lover</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza14" value="Pizza Cheese Lover">
+                    <label class="form-check-label fw-bold ms-2" for="pizza14">Pizza Cheese Lover</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza14_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -273,9 +283,9 @@ label, .form-check-label {
                   </div>
                   <!-- 15 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza15" value="Pizza Margarita">
-                    <label class="form-check-label fw-bold" for="pizza15">Pizza Margarita</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza15" value="Pizza Margarita">
+                    <label class="form-check-label fw-bold ms-2" for="pizza15">Pizza Margarita</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza15_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -286,9 +296,9 @@ label, .form-check-label {
                   </div>
                   <!-- 16 -->
                   <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" name="pizza" id="pizza16" value="Pizza Hawaiian">
-                    <label class="form-check-label fw-bold" for="pizza16">Pizza Hawaiian</label>
-                    <div class="d-flex align-items-center ms-4">
+                    <input class="form-check-input ms-3" type="checkbox" name="pizza" id="pizza16" value="Pizza Hawaiian">
+                    <label class="form-check-label fw-bold ms-2" for="pizza16">Pizza Hawaiian</label>
+                    <div class="d-flex align-items-center ms-5">
                       <label class="me-2">Small</label>
                       <input type="number" min="0" value="0" class="form-control me-3" id="pizza16_small" style="width:70px;" disabled>
                       <label class="me-2">Medium</label>
@@ -308,32 +318,32 @@ label, .form-check-label {
                   </div>
                   <div id="ricebowlDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl1" value="Chicken Ricebowl">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl1" value="Chicken Ricebowl">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl1" style="min-width:170px;">Chicken Ricebowl</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl2" value="Chicken Black Paper">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl2" value="Chicken Black Paper">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl2" style="min-width:170px;">Chicken Black Paper</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl3" value="Seafood Sweet Sour">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl3" value="Seafood Sweet Sour">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl3" style="min-width:170px;">Seafood Sweet Sour</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl4" value="Garlic Ricebowl">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl4" value="Garlic Ricebowl">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl4" style="min-width:170px;">Garlic Ricebowl</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl5" value="Lime Ricebowl">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl5" value="Lime Ricebowl">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl5" style="min-width:170px;">Lime Ricebowl</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl5_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="ricebowl" id="ricebowl6" value="Sambal Matah">
+                      <input class="form-check-input ms-3" type="checkbox" name="ricebowl" id="ricebowl6" value="Sambal Matah">
                       <label class="form-check-label fw-bold ms-2 me-2" for="ricebowl6" style="min-width:170px;">Sambal Matah</label>
                       <input type="number" min="0" value="0" class="form-control" id="ricebowl6_jumlah" style="width:80px;" disabled>
                     </div>
@@ -348,22 +358,22 @@ label, .form-check-label {
                   </div>
                   <div id="steakDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="steak" id="steak1" value="Chicken Parmigiana">
+                      <input class="form-check-input ms-3" type="checkbox" name="steak" id="steak1" value="Chicken Parmigiana">
                       <label class="form-check-label fw-bold ms-2 me-2" for="steak1" style="min-width:170px;">Chicken Parmigiana</label>
                       <input type="number" min="0" value="0" class="form-control" id="steak1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="steak" id="steak2" value="Cordon Bleu">
+                      <input class="form-check-input ms-3" type="checkbox" name="steak" id="steak2" value="Cordon Bleu">
                       <label class="form-check-label fw-bold ms-2 me-2" for="steak2" style="min-width:170px;">Cordon Bleu</label>
                       <input type="number" min="0" value="0" class="form-control" id="steak2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="steak" id="steak3" value="Dori Parmigiana">
+                      <input class="form-check-input ms-3" type="checkbox" name="steak" id="steak3" value="Dori Parmigiana">
                       <label class="form-check-label fw-bold ms-2 me-2" for="steak3" style="min-width:170px;">Dori Parmigiana</label>
                       <input type="number" min="0" value="0" class="form-control" id="steak3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="steak" id="steak4" value="Chicken Steak">
+                      <input class="form-check-input ms-3" type="checkbox" name="steak" id="steak4" value="Chicken Steak">
                       <label class="form-check-label fw-bold ms-2 me-2" for="steak4" style="min-width:170px;">Chicken Steak</label>
                       <input type="number" min="0" value="0" class="form-control" id="steak4_jumlah" style="width:80px;" disabled>
                     </div>
@@ -378,27 +388,27 @@ label, .form-check-label {
                   </div>
                   <div id="burgerDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="burger" id="burger1" value="Momochi">
+                      <input class="form-check-input ms-3" type="checkbox" name="burger" id="burger1" value="Momochi">
                       <label class="form-check-label fw-bold ms-2 me-2" for="burger1" style="min-width:170px;">Momochi</label>
                       <input type="number" min="0" value="0" class="form-control" id="burger1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="burger" id="burger2" value="Momobee">
+                      <input class="form-check-input ms-3" type="checkbox" name="burger" id="burger2" value="Momobee">
                       <label class="form-check-label fw-bold ms-2 me-2" for="burger2" style="min-width:170px;">Momobee</label>
                       <input type="number" min="0" value="0" class="form-control" id="burger2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="burger" id="burger3" value="Beef Burger">
+                      <input class="form-check-input ms-3" type="checkbox" name="burger" id="burger3" value="Beef Burger">
                       <label class="form-check-label fw-bold ms-2 me-2" for="burger3" style="min-width:170px;">Beef Burger</label>
                       <input type="number" min="0" value="0" class="form-control" id="burger3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="burger" id="burger4" value="Chicken Burger">
+                      <input class="form-check-input ms-3" type="checkbox" name="burger" id="burger4" value="Chicken Burger">
                       <label class="form-check-label fw-bold ms-2 me-2" for="burger4" style="min-width:170px;">Chicken Burger</label>
                       <input type="number" min="0" value="0" class="form-control" id="burger4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="burger" id="burger5" value="Crispy Chicken Burger">
+                      <input class="form-check-input ms-3" type="checkbox" name="burger" id="burger5" value="Crispy Chicken Burger">
                       <label class="form-check-label fw-bold ms-2 me-2" for="burger5" style="min-width:170px;">Crispy Chicken Burger</label>
                       <input type="number" min="0" value="0" class="form-control" id="burger5_jumlah" style="width:80px;" disabled>
                     </div>
@@ -413,32 +423,32 @@ label, .form-check-label {
                   </div>
                   <div id="pastaDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta1" value="Aglio Olio">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta1" value="Aglio Olio">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta1" style="min-width:170px;">Aglio Olio</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta2" value="Chicken Lasagna">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta2" value="Chicken Lasagna">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta2" style="min-width:170px;">Chicken Lasagna</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta3" value="Marinara">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta3" value="Marinara">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta3" style="min-width:170px;">Marinara</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta4" value="Carbonara">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta4" value="Carbonara">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta4" style="min-width:170px;">Carbonara</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta5" value="Macaroni Brulee">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta5" value="Macaroni Brulee">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta5" style="min-width:170px;">Macaroni Brulee</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta5_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="pasta" id="pasta6" value="Bolognese">
+                      <input class="form-check-input ms-3" type="checkbox" name="pasta" id="pasta6" value="Bolognese">
                       <label class="form-check-label fw-bold ms-2 me-2" for="pasta6" style="min-width:170px;">Bolognese</label>
                       <input type="number" min="0" value="0" class="form-control" id="pasta6_jumlah" style="width:80px;" disabled>
                     </div>
@@ -453,42 +463,42 @@ label, .form-check-label {
                   </div>
                   <div id="sidemenuDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu1" value="Spicy Chicken Wings">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu1" value="Spicy Chicken Wings">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu1" style="min-width:170px;">Spicy Chicken Wings</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu2" value="Chips & Nugget">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu2" value="Chips & Nugget">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu2" style="min-width:170px;">Chips & Nugget</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu3" value="Saussage Oven">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu3" value="Saussage Oven">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu3" style="min-width:170px;">Saussage Oven</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu4" value="Fish & Chips">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu4" value="Fish & Chips">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu4" style="min-width:170px;">Fish & Chips</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu5" value="Calamari Ring">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu5" value="Calamari Ring">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu5" style="min-width:170px;">Calamari Ring</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu5_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu6" value="Onion Ring">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu6" value="Onion Ring">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu6" style="min-width:170px;">Onion Ring</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu6_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu7" value="Spring Rolls">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu7" value="Spring Rolls">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu7" style="min-width:170px;">Spring Rolls</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu7_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="sidemenu" id="sidemenu8" value="Garlic Bread">
+                      <input class="form-check-input ms-3" type="checkbox" name="sidemenu" id="sidemenu8" value="Garlic Bread">
                       <label class="form-check-label fw-bold ms-2 me-2" for="sidemenu8" style="min-width:170px;">Garlic Bread</label>
                       <input type="number" min="0" value="0" class="form-control" id="sidemenu8_jumlah" style="width:80px;" disabled>
                     </div>
@@ -503,22 +513,22 @@ label, .form-check-label {
                   </div>
                   <div id="dessertDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="dessert" id="dessert1" value="Banana Pizza">
+                      <input class="form-check-input ms-3" type="checkbox" name="dessert" id="dessert1" value="Banana Pizza">
                       <label class="form-check-label fw-bold ms-2 me-2" for="dessert1" style="min-width:170px;">Banana Pizza</label>
                       <input type="number" min="0" value="0" class="form-control" id="dessert1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="dessert" id="dessert2" value="Banana Rolls">
+                      <input class="form-check-input ms-3" type="checkbox" name="dessert" id="dessert2" value="Banana Rolls">
                       <label class="form-check-label fw-bold ms-2 me-2" for="dessert2" style="min-width:170px;">Banana Rolls</label>
                       <input type="number" min="0" value="0" class="form-control" id="dessert2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="dessert" id="dessert3" value="Ice Cream">
+                      <input class="form-check-input ms-3" type="checkbox" name="dessert" id="dessert3" value="Ice Cream">
                       <label class="form-check-label fw-bold ms-2 me-2" for="dessert3" style="min-width:170px;">Ice Cream</label>
                       <input type="number" min="0" value="0" class="form-control" id="dessert3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="dessert" id="dessert4" value="Ice Cream Jelly">
+                      <input class="form-check-input ms-3" type="checkbox" name="dessert" id="dessert4" value="Ice Cream Jelly">
                       <label class="form-check-label fw-bold ms-2 me-2" for="dessert4" style="min-width:170px;">Ice Cream Jelly</label>
                       <input type="number" min="0" value="0" class="form-control" id="dessert4_jumlah" style="width:80px;" disabled>
                     </div>
@@ -534,197 +544,197 @@ label, .form-check-label {
                   <div id="beveragesDetail" style="display:none;">
                     <!-- Mocktail -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev1" value="Mocktail Virgin Mojito">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev1" value="Mocktail Virgin Mojito">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev1" style="min-width:200px;">Mocktail Virgin Mojito</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev2" value="Mocktail Pineapple Punch">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev2" value="Mocktail Pineapple Punch">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev2" style="min-width:200px;">Mocktail Pineapple Punch</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev3" value="Mocktail Strawberry Squash">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev3" value="Mocktail Strawberry Squash">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev3" style="min-width:200px;">Mocktail Strawberry Squash</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev4" value="Mocktail Lime Squash">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev4" value="Mocktail Lime Squash">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev4" style="min-width:200px;">Mocktail Lime Squash</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev5" value="Mocktail Orange Squash">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev5" value="Mocktail Orange Squash">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev5" style="min-width:200px;">Mocktail Orange Squash</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev5_jumlah" style="width:80px;" disabled>
                     </div>
                     <!-- Juice -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev6" value="Juice Avocado">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev6" value="Juice Avocado">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev6" style="min-width:200px;">Juice Avocado</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev6_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev7" value="Juice Mango">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev7" value="Juice Mango">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev7" style="min-width:200px;">Juice Mango</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev7_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev8" value="Juice Orange">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev8" value="Juice Orange">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev8" style="min-width:200px;">Juice Orange</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev8_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev9" value="Juice Pineapple">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev9" value="Juice Pineapple">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev9" style="min-width:200px;">Juice Pineapple</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev9_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev10" value="Juice Dragon Fruit">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev10" value="Juice Dragon Fruit">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev10" style="min-width:200px;">Juice Dragon Fruit</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev10_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev11" value="Juice Watermelon">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev11" value="Juice Watermelon">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev11" style="min-width:200px;">Juice Watermelon</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev11_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev12" value="Juice Strawberry">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev12" value="Juice Strawberry">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev12" style="min-width:200px;">Juice Strawberry</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev12_jumlah" style="width:80px;" disabled>
                     </div>
                     <!-- Iced Jelly -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev13" value="Iced Jelly Mango">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev13" value="Iced Jelly Mango">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev13" style="min-width:200px;">Iced Jelly Mango</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev13_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev14" value="Iced Jelly Strawberry">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev14" value="Iced Jelly Strawberry">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev14" style="min-width:200px;">Iced Jelly Strawberry</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev14_jumlah" style="width:80px;" disabled>
                     </div>
                     <!-- Ice Blend -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev15" value="Ice Blend Red Velvet">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev15" value="Ice Blend Red Velvet">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev15" style="min-width:200px;">Ice Blend Red Velvet</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev15_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev16" value="Ice Blend Vanilla">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev16" value="Ice Blend Vanilla">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev16" style="min-width:200px;">Ice Blend Vanilla</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev16_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev17" value="Ice Blend Choco Oreo">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev17" value="Ice Blend Choco Oreo">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev17" style="min-width:200px;">Ice Blend Choco Oreo</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev17_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev18" value="Ice Blend Hazelnut">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev18" value="Ice Blend Hazelnut">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev18" style="min-width:200px;">Ice Blend Hazelnut</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev18_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev19" value="Ice Blend Taro">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev19" value="Ice Blend Taro">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev19" style="min-width:200px;">Ice Blend Taro</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev19_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev20" value="Ice Blend Tiramisu">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev20" value="Ice Blend Tiramisu">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev20" style="min-width:200px;">Ice Blend Tiramisu</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev20_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev21" value="Ice Blend Thai Tea">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev21" value="Ice Blend Thai Tea">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev21" style="min-width:200px;">Ice Blend Thai Tea</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev21_jumlah" style="width:80px;" disabled>
                     </div>
                     <!-- Milkshake -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev22" value="Milkshake Chocolate">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev22" value="Milkshake Chocolate">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev22" style="min-width:200px;">Milkshake Chocolate</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev22_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev23" value="Milkshake Strawberry">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev23" value="Milkshake Strawberry">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev23" style="min-width:200px;">Milkshake Strawberry</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev23_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev24" value="Milkshake Vanilla">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev24" value="Milkshake Vanilla">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev24" style="min-width:200px;">Milkshake Vanilla</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev24_jumlah" style="width:80px;" disabled>
                     </div>
                     <!-- Lainnya -->
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev25" value="Beer Small">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev25" value="Beer Small">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev25" style="min-width:200px;">Beer Small</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev25_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev26" value="Mineral Water">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev26" value="Mineral Water">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev26" style="min-width:200px;">Mineral Water</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev26_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev27" value="Coca Cola">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev27" value="Coca Cola">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev27" style="min-width:200px;">Coca Cola</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev27_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev28" value="Sprite">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev28" value="Sprite">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev28" style="min-width:200px;">Sprite</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev28_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev29" value="Soda Water">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev29" value="Soda Water">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev29" style="min-width:200px;">Soda Water</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev29_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev30" value="Korean Strawberry">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev30" value="Korean Strawberry">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev30" style="min-width:200px;">Korean Strawberry</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev30_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev31" value="Royal Chocolate">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev31" value="Royal Chocolate">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev31" style="min-width:200px;">Royal Chocolate</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev31_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev32" value="Es Jeruk">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev32" value="Es Jeruk">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev32" style="min-width:200px;">Es Jeruk</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev32_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev33" value="Ice Tea">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev33" value="Ice Tea">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev33" style="min-width:200px;">Ice Tea</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev33_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev34" value="Lemon Tea">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev34" value="Lemon Tea">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev34" style="min-width:200px;">Lemon Tea</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev34_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev35" value="Lychee Tea">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev35" value="Lychee Tea">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev35" style="min-width:200px;">Lychee Tea</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev35_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev36" value="Milo">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev36" value="Milo">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev36" style="min-width:200px;">Milo</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev36_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev37" value="Hot Chocolate">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev37" value="Hot Chocolate">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev37" style="min-width:200px;">Hot Chocolate</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev37_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="beverages" id="bev38" value="Kopi Bali">
+                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev38" value="Kopi Bali">
                       <label class="form-check-label fw-bold ms-2 me-2" for="bev38" style="min-width:200px;">Kopi Bali</label>
                       <input type="number" min="0" value="0" class="form-control" id="bev38_jumlah" style="width:80px;" disabled>
                     </div>
@@ -739,92 +749,92 @@ label, .form-check-label {
                   </div>
                   <div id="coffeeDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee1" value="Cappucino Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee1" value="Cappucino Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee1" style="min-width:200px;">Cappucino Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee1_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee2" value="Cappucino Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee2" value="Cappucino Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee2" style="min-width:200px;">Cappucino Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee2_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee3" value="Caramel Macchiato Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee3" value="Caramel Macchiato Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee3" style="min-width:200px;">Caramel Macchiato Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee3_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee4" value="Caramel Macchiato Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee4" value="Caramel Macchiato Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee4" style="min-width:200px;">Caramel Macchiato Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee4_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee5" value="Coffee Latte Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee5" value="Coffee Latte Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee5" style="min-width:200px;">Coffee Latte Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee5_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee6" value="Coffee Latte Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee6" value="Coffee Latte Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee6" style="min-width:200px;">Coffee Latte Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee6_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee7" value="Moccacino Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee7" value="Moccacino Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee7" style="min-width:200px;">Moccacino Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee7_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee8" value="Moccacino Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee8" value="Moccacino Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee8" style="min-width:200px;">Moccacino Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee8_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee9" value="Palm Sugar Latte Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee9" value="Palm Sugar Latte Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee9" style="min-width:200px;">Palm Sugar Latte Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee9_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee10" value="Palm Sugar Latte Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee10" value="Palm Sugar Latte Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee10" style="min-width:200px;">Palm Sugar Latte Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee10_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee11" value="Latte Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee11" value="Latte Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee11" style="min-width:200px;">Latte Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee11_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee12" value="Latte Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee12" value="Latte Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee12" style="min-width:200px;">Latte Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee12_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee13" value="Kopi Tubruk">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee13" value="Kopi Tubruk">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee13" style="min-width:200px;">Kopi Tubruk</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee13_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee14" value="Americano Hot">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee14" value="Americano Hot">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee14" style="min-width:200px;">Americano Hot</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee14_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee15" value="Americano Iced">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee15" value="Americano Iced">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee15" style="min-width:200px;">Americano Iced</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee15_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee16" value="Avocado Coffee">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee16" value="Avocado Coffee">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee16" style="min-width:200px;">Avocado Coffee</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee16_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee17" value="Coffee Regal">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee17" value="Coffee Regal">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee17" style="min-width:200px;">Coffee Regal</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee17_jumlah" style="width:80px;" disabled>
                     </div>
                     <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input" type="checkbox" name="coffee" id="coffee18" value="Affogato">
+                      <input class="form-check-input ms-3" type="checkbox" name="coffee" id="coffee18" value="Affogato">
                       <label class="form-check-label fw-bold ms-2 me-2" for="coffee18" style="min-width:200px;">Affogato</label>
                       <input type="number" min="0" value="0" class="form-control" id="coffee18_jumlah" style="width:80px;" disabled>
                     </div>
