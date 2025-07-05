@@ -52,10 +52,10 @@ label, .form-check-label {
                 <label for="tujuan">Pilih Resto Tujuan</label>
                 <select id="tujuan" class="form-control shadow none" required>
                     <option value="">--silakan pilih resto tujuan anda--</option>
-                    <option value="6281804353465">StarPizza Amlapura</option>
-                    <option value="6281804000001">StarPizza Amed</option>
-                    <option value="6281804000002">StarPizza Gianyar</option>
-                    <option value="6281804000003">StarPizza Klungkung</option>
+                    <option value="6281246587484">StarPizza Amlapura</option>
+                    <option value="6282144479001">StarPizza Amed</option>
+                    <option value="6281818276655">StarPizza Gianyar</option>
+                    <option value="6287764373838">StarPizza Klungkung</option>
                 </select>
                 </div>
                 <!-- kategori pesan -->
@@ -961,6 +961,22 @@ document.querySelectorAll('input[name="tipe_pesanan"]').forEach((radio) => {
         }
     });
 });
+
+// Tampilkan/Hide Beverages Detail
+document.querySelectorAll('input[name="beverages"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', function() {
+        const bevNum = checkbox.id.replace('bev', '');
+        const jumlahInput = document.getElementById(`bev${bevNum}_jumlah`);
+        if (checkbox.checked) {
+            jumlahInput.disabled = false;
+            jumlahInput.value = "0";
+        } else {
+            jumlahInput.disabled = true;
+            jumlahInput.value = "0";
+        }
+    });
+});
+
 // Tampilkan/Hide Coffee Detail
 document.querySelectorAll('input[name="coffee"]').forEach((checkbox) => {
     checkbox.addEventListener('change', function() {
