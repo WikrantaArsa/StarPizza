@@ -1139,7 +1139,7 @@ const alamatText = tipePesanan === "Delivery" ? `\n ke Alamat: *${alamat}*` : ""
 const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star Crew!!%0ANama Saya %20" +
     "*" + name + "*%0AMau Pesan " +
     tipePesanan +
-    alamatText +
+    "*" + alamatText + "*" +
     pesananPizza +
     pesananRicebowl +
     pesananSteak +
