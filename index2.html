@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            color: #4C4C4C;
+            font-weight: 600;
+        }
+        label, .form-check-label {
+            color: #6C757D;
+        }
+        .form-control, .form-select {
+            background: #fff;
+            border-color: #D1D1D1;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 10px rgba(38, 44, 88, 0.1);
+        }
+        .btn-primary {
+            background: #2563eb;
+            border-color: #2563eb;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background: #38bdf8;
+            border-color: #38bdf8;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .form-check-input:checked {
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+        .card {
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .img-fluid {
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            margin-bottom: 25px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .card-body {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 16px;
+        }
+        .form-check-label {
+            font-weight: 500;
+        }
+        .form-check-input:focus {
+            box-shadow: 0 0 5px rgba(38, 44, 88, 0.2);
+        }
+        .form-check-input {
+            margin-top: 5px;
+        }
+        .text-muted {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <img src="baner3.png" alt="StarPizza Logo" class="img-fluid w-100 mx-auto my-4 shadow rounded">
+                        <h1 class="text-center text-dark mb-5">
+                            <span style="color: #289dd2;">Star</span><span style="color: #e4a050;">Pizza</span> Order Form
+                        </h1>
+
+                        <form onsubmit="sendMessage(event)">
+                            <!-- Select Restaurant -->
+                            <div class="form-section">
+                                <label for="tujuan">Choose Restaurant</label>
+                                <select id="tujuan" class="form-control shadow-none fw-bold" required>
+                                    <option value="">--Select Your Restaurant--</option>
+                                    <option value="6281246587484">STAR PIZZA AMLAPURA</option>
+                                    <option value="6282144479001">STAR PIZZA AMED</option>
+                                    <option value="6281818276655">STAR PIZZA GIANYAR</option>
+                                    <option value="6287764373838">STAR PIZZA KLUNGKUNG</option>
+                                </select>
+                            </div>
+
+                            <!-- Name -->
+                            <div class="form-section">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control shadow-none" placeholder="Your Name" required>
+                            </div>
+
+                            <!-- Order Type (Delivery/Takeaway) -->
+                            <div class="form-section">
+                                <label class="me-3">Order Type:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipe_pesanan" id="delivery" value="Delivery" checked>
+                                    <label class="form-check-label" for="delivery">Delivery</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipe_pesanan" id="takeaway" value="Takeaway">
+                                    <label class="form-check-label" for="takeaway">Takeaway</label>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="form-section">
+                                <label for="alamat">Address</label>
+                                <input type="text" id="alamat" class="form-control shadow-none" placeholder="Enter your address" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-section">
+                                <label for="message">Additional Message</label>
+                                <textarea id="message" class="form-control shadow-none" placeholder="Any additional instructions or message" rows="3"></textarea>
+                            </div>
+
+                            <!-- Pizza Section -->
+                            <div class="form-section">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="showPizza">
+                                    <label class="form-check-label fw-bold" for="showPizza">Select Pizza</label>
+                                </div>
+                                <div id="pizzaDetail" style="display:none;">
+                                    <!-- Pizza List (Each Pizza item is shown based on the checkbox) -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="pizza" id="pizza1" value="Pizza Saussage Bites">
+                                        <label class="form-check-label" for="pizza1">Pizza Saussage Bites</label>
+                                        <div class="d-flex align-items-center mt-2">
+                                            <label class="me-2">Small</label>
+                                            <input type="number" min="0" value="0" class="form-control" id="pizza1_small" style="width:70px;" disabled>
+                                            <label class="me-2">Medium</label>
+                                            <input type="number" min="0" value="0" class="form-control" id="pizza1_medium" style="width:70px;" disabled>
+                                            <label class="me-2">Large</label>
+                                            <input type="number" min="0" value="0" class="form-control" id="pizza1_large" style="width:70px;" disabled>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat for other pizzas -->
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="form-section text-center">
+                                <button type="submit" class="btn btn-primary px-4">Submit Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Pizza Options Based on Checkbox
+        document.getElementById('showPizza').addEventListener('change', function() {
+            const pizzaDetail = document.getElementById('pizzaDetail');
+            pizzaDetail.style.display = this.checked ? '' : 'none';
+        });
+
+        function sendMessage(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('alamat').value;
+            const message = document.getElementById('message').value;
+            const restaurant = document.getElementById('tujuan').value;
+
+            let orderDetails = `Name: ${name}\nAddress: ${address}\nMessage: ${message}\nRestaurant: ${restaurant}\n`;
+
+            // Collect selected pizzas and quantities
+            const pizzas = document.querySelectorAll('input[name="pizza"]:checked');
+            pizzas.forEach(pizza => {
+                const pizzaNum = pizza.id.replace('pizza', '');
+                ['small', 'medium', 'large'].forEach(size => {
+                    const qtyInput = document.getElementById(`pizza${pizzaNum}_${size}`);
+                    const qty = qtyInput.value;
+                    if (qty > 0) {
+                        orderDetails += `${pizza.value} (${size}) x${qty}\n`;
+                    }
+                });
+            });
+
+            // Prepare WhatsApp URL
+            const url = `https://api.whatsapp.com/send?phone=${restaurant}&text=${encodeURIComponent(orderDetails)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
