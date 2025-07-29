@@ -42,15 +42,15 @@ label, .form-check-label {
          <div class="col-md-8">
           <img src="baner3.png" alt="Logo StarPizza" class="img-fluid w-100 d-block mx-auto my-4 shadow rounded" style="max-height:350px; object-fit:cover;">
             <h1 class="text-dark mb-5 text-center">
-              ORDER FORM <a style="color: #289dd2;">Star</a><a style="color: #e4a050 ;">Pizza</a>
+              PEMESANAN <a style="color: #289dd2;">Star</a><a style="color: #e4a050 ;">Pizza</a>
             </h1>
             <form onsubmit="sendMessage()">
 
                 <!-- kategori pesan -->
                 <div class="mb-3">
-                <label for="tujuan">Choose The Resto</label>
+                <label for="tujuan">Pilih Resto Tujuan</label>
                 <select id="tujuan" class="form-control shadow none  fw-bold" required>
-                    <option value="">--Choose your destination resto--</option>
+                    <option value="">--silakan pilih resto tujuan anda--</option>
                     <option value="6281246587484">STAR PIZZA AMLAPURA</option>
                     <option value="6282144479001">STAR PIZZA AMED</option>
                     <option value="6281818276655">STAR PIZZA GIANYAR</option>
@@ -59,13 +59,13 @@ label, .form-check-label {
                 </div>
                 <!-- kategori pesan -->
                 <div class="mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="--Type Your Name--" class="form-control shadow none" required>
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" placeholder="--Nama Anda--" class="form-control shadow none" required>
                 </div>
 
                 <!-- Pilihan Delivery/Takeaway -->
                 <div class="mb-3">
-                  <label class="me-3">Select Your Order:</label>
+                  <label class="me-3">Pilih Tipe Pesanan:</label>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="tipe_pesanan" id="delivery" value="Delivery" checked>
                     <label class="form-check-label" for="delivery">Delivery</label>
@@ -78,15 +78,15 @@ label, .form-check-label {
 
                 <!-- alamat -->
                 <div class="mb-3">
-                  <label for="alamat">Address</label>
-                  <input type="text" id="alamat" placeholder="--insert your address--" class="form-control shadow none" required>
+                  <label for="alamat">Alamat</label>
+                  <input type="text" id="alamat" placeholder="--silakan masukkan alamat anda--" class="form-control shadow none" required>
                 </div>
                
                 <!-- Pizza -->
                 <div class="mb-3">
                 <div class="form-check mb-2">
                   <input class="form-check-input" type="checkbox" id="showPizza">
-                  <label class="form-check-label fw-bold" for="showPizza">Choose Pizza Order</label>
+                  <label class="form-check-label fw-bold" for="showPizza">Pilih Pesanan Pizza</label>
                 </div>
                 <div id="pizzaDetail" style="display:none;">
                   <!-- Semua pilihan pizza di sini -->
@@ -321,7 +321,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showRicebowl">
-                    <label class="form-check-label fw-bold" for="showRicebowl">Choose Ricebowl Order</label>
+                    <label class="form-check-label fw-bold" for="showRicebowl">Pilih Pesanan Ricebowl</label>
                   </div>
                   <div id="ricebowlDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -372,7 +372,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showSteak">
-                    <label class="form-check-label fw-bold" for="showSteak">Choose Steak Order</label>
+                    <label class="form-check-label fw-bold" for="showSteak">Pilih Pesanan Steak</label>
                   </div>
                   <div id="steakDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -406,7 +406,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showBurger">
-                    <label class="form-check-label fw-bold" for="showBurger">Choose Burger Order</label>
+                    <label class="form-check-label fw-bold" for="showBurger">Pilih Pesanan Burger</label>
                   </div>
                   <div id="burgerDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -446,7 +446,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showPasta">
-                    <label class="form-check-label fw-bold" for="showPasta">Choose Pasta Order</label>
+                    <label class="form-check-label fw-bold" for="showPasta">Pilih Pesanan Pasta</label>
                   </div>
                   <div id="pastaDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -492,7 +492,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showSidemenu">
-                    <label class="form-check-label fw-bold" for="showSidemenu">Choose Side Menu</label>
+                    <label class="form-check-label fw-bold" for="showSidemenu">Pilih Pesanan Side Menu</label>
                   </div>
                   <div id="sidemenuDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -550,7 +550,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showDessert">
-                    <label class="form-check-label fw-bold" for="showDessert">Choose Dessert</label>
+                    <label class="form-check-label fw-bold" for="showDessert">Pilih Pesanan Dessert</label>
                   </div>
                   <div id="dessertDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -584,7 +584,7 @@ label, .form-check-label {
                 <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showBeverages">
-                    <label class="form-check-label fw-bold" for="showBeverages">Choose Beverages</label>
+                    <label class="form-check-label fw-bold" for="showBeverages">Pilih Beverages</label>
                   </div>
                   <div id="beveragesDetail" style="display:none;">
                     <!-- Mocktail -->
@@ -790,7 +790,7 @@ label, .form-check-label {
                   <div class="mb-3">
                   <div class="form-check mb-2">
                     <input class="form-check-input" type="checkbox" id="showCoffee">
-                    <label class="form-check-label fw-bold" for="showCoffee">Choose Coffee Order</label>
+                    <label class="form-check-label fw-bold" for="showCoffee">Pilih Coffee</label>
                   </div>
                   <div id="coffeeDetail" style="display:none;">
                     <div class="form-check mb-2 d-flex align-items-center">
@@ -888,7 +888,7 @@ label, .form-check-label {
 
                 <!-- pesan tambahan -->
                 <div class="mb-3">
-                  <label for="message">Type Other Information Here</label>
+                  <label for="message">Keterangan Lainnya</label>
                   <textarea id="message" cols="30" rows="3" class="form-control shadow none" required></textarea>
                 </div>
                 
@@ -1178,21 +1178,21 @@ coffeeChecked.forEach((cb) => {
         coffeeList.push(`${cb.value} x${jumlah}`);
     }
 });
-const pesananCoffee = coffeeList.length > 0 ? "%0ACoffee Order: %20" + coffeeList.join(', ') : "";
-    const pesananPizza = pizzaList.length > 0 ? "%0APizza Order: %20" + pizzaList.join(', ') : "";
-    const pesananRicebowl = ricebowlList.length > 0 ? "%0ARicebowl Order: %20" + ricebowlList.join(', ') : "";
-    const pesananSteak = steakList.length > 0 ? "%0ASteak Order: %20" + steakList.join(', ') : "";
-    const pesananBurger = burgerList.length > 0 ? "%0ABurger Order: %20" + burgerList.join(', ') : "";
-    const pesananPasta = pastaList.length > 0 ? "%0APasta Order: %20" + pastaList.join(', ') : "";
-    const pesananSideMenu = sidemenuList.length > 0 ? "%0ASide Menu: %20" + sidemenuList.join(', ') : "";
-    const pesananDessert = dessertList.length > 0 ? "%0ADessert: %20" + dessertList.join(', ') : "";
-    const pesananBeverages = beveragesList.length > 0 ? "%0ABeverages: %20" + beveragesList.join(', ') : "";
+const pesananCoffee = coffeeList.length > 0 ? "%0APesanan Coffee: %20" + coffeeList.join(', ') : "";
+    const pesananPizza = pizzaList.length > 0 ? "%0APesanan Pizza: %20" + pizzaList.join(', ') : "";
+    const pesananRicebowl = ricebowlList.length > 0 ? "%0APesanan Ricebowl: %20" + ricebowlList.join(', ') : "";
+    const pesananSteak = steakList.length > 0 ? "%0APesanan Steak: %20" + steakList.join(', ') : "";
+    const pesananBurger = burgerList.length > 0 ? "%0APesanan Burger: %20" + burgerList.join(', ') : "";
+    const pesananPasta = pastaList.length > 0 ? "%0APesanan Pasta: %20" + pastaList.join(', ') : "";
+    const pesananSideMenu = sidemenuList.length > 0 ? "%0APesanan Side Menu: %20" + sidemenuList.join(', ') : "";
+    const pesananDessert = dessertList.length > 0 ? "%0APesanan Dessert: %20" + dessertList.join(', ') : "";
+    const pesananBeverages = beveragesList.length > 0 ? "%0APesanan Beverages: %20" + beveragesList.join(', ') : "";
 
     const tipePesanan = document.querySelector('input[name="tipe_pesanan"]:checked').value;
-const alamatText = tipePesanan === "Delivery" ? `\n to: *${alamat}*` : "";
+const alamatText = tipePesanan === "Delivery" ? `\n ke Alamat: *${alamat}*` : "";
 
-const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star Crew!!%0AMy Name is %20" +
-    "*" + name + "*%0AI want to order and " +
+const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star Crew!!%0ANama Saya %20" +
+    "*" + name + "*%0AMau Pesan " +
     "*" + tipePesanan + "*" +
     alamatText +
     pesananPizza +
@@ -1204,7 +1204,7 @@ const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star
     pesananDessert +
     pesananBeverages +
      pesananCoffee +
-    "%0ANote : " + message +
+    "%0ACatatan : " + message +
     "";
 
     window.open(url);
