@@ -587,24 +587,6 @@ label, .form-check-label {
                     <label class="form-check-label fw-bold" for="showBeverages">Pilih Beverages</label>
                   </div>
                   <div id="beveragesDetail" style="display:none;">
-                    <!-- matcha -->
-                    <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev0" value="Matcha">
-                      <label class="form-check-label fw-bold ms-2 me-2" for="bev0" style="min-width:200px;">Matcha Latte</label>
-                      <input type="number" min="0" value="0" class="form-control" id="bev0_jumlah" style="width:80px;" disabled>
-                    </div>
-                    <!-- Taro -->
-                    <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev1" value="Taro">
-                      <label class="form-check-label fw-bold ms-2 me-2" for="bev1" style="min-width:200px;">Taro Latte</label>
-                      <input type="number" min="0" value="0" class="form-control" id="bev1_jumlah" style="width:80px;" disabled>
-                    </div>
-                    <!-- Choco latte -->
-                    <div class="form-check mb-2 d-flex align-items-center">
-                      <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev2" value="Choco">
-                      <label class="form-check-label fw-bold ms-2 me-2" for="bev2" style="min-width:200px;">Choco Latte</label>
-                      <input type="number" min="0" value="0" class="form-control" id="bev2_jumlah" style="width:80px;" disabled>
-                    </div>
                     <!-- Mocktail -->
                     <div class="form-check mb-2 d-flex align-items-center">
                       <input class="form-check-input ms-3" type="checkbox" name="beverages" id="bev1" value="Mocktail Virgin Mojito">
@@ -903,7 +885,29 @@ label, .form-check-label {
                     </div>
                   </div>
                 </div>
-
+<!-- pilihan non coffee -->
+                  <div class="mb-3">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="shownonCoffee">
+                    <label class="form-check-label fw-bold" for="shownonCoffee">Pilih Non-Coffee</label>
+                  </div>
+                  <div id="nonCoffeeDetail" style="display:none;">
+                    <div class="form-check mb-2 d-flex align-items-center">
+                      <input class="form-check-input ms-3" type="checkbox" name="noncoffee" id="noncoffee1" value="matcha Latte">
+                      <label class="form-check-label fw-bold ms-2 me-2" for="noncoffee1" style="min-width:200px;">Matcha Latte</label>
+                      <input type="number" min="0" value="0" class="form-control" id="noncoffee1_jumlah" style="width:80px;" disabled>
+                    </div>
+                    <div class ="form-check mb-2 d-flex align-items-center">
+                      <input class="form-check-input ms-3" type="checkbox" name="noncoffee" id="noncoffee2" value="Taro Latte">
+                      <label class="form-check-label fw-bold ms-2 me-2" for="noncoffee2" style="min-width:200px;">Taro Latte</label>
+                      <input type="number" min="0" value="0" class="form-control" id="noncoffee2_jumlah" style="width:80px;" disabled>
+                    </div>
+                    <div class="form-check mb-2 d-flex align-items-center">
+                      <input class="form-check-input ms-3" type="checkbox" name="noncoffee" id="noncoffee3" value="choco latte">
+                      <label class="form-check-label fw-bold ms-2 me-2" for="noncoffee3" style="min-width:200px;">Choco Latte</label>
+                      <input type="number" min="0" value="0" class="form-control" id="noncoffee3_jumlah" style="width:80px;" disabled>
+                    </div>
+                  </div>
                 <!-- pesan tambahan -->
                 <div class="mb-3">
                   <label for="message">Keterangan Lainnya</label>
@@ -1064,6 +1068,20 @@ document.querySelectorAll('input[name="coffee"]').forEach((checkbox) => {
     });
 });
 
+//tampilkan/hide non-coffee detail
+document.querySelectorAll('input[name="noncoffee"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', function() {
+        const coffeeNum = checkbox.id.replace('noncoffee', '');
+        const jumlahInput = document.getElementById(`noncoffee${coffeeNum}_jumlah`);
+        if (checkbox.checked) {
+            jumlahInput.disabled = false;
+            jumlahInput.value = "0";
+        } else {
+            jumlahInput.disabled = true;
+            jumlahInput.value = "0";
+        }
+    });
+});
 // Set kondisi awal
 window.addEventListener('DOMContentLoaded', function() {
     const alamatInput = document.getElementById('alamat');
@@ -1196,7 +1214,19 @@ coffeeChecked.forEach((cb) => {
         coffeeList.push(`${cb.value} x${jumlah}`);
     }
 });
+// nonCoffee
+const nonCoffeeChecked = document.querySelectorAll('input[name="noncoffee"]:checked');
+let nonCoffeeList = [];
+nonCoffeeChecked.forEach((cb) => {
+    const nonCoffeeNum = cb.id.replace('noncoffee', '');
+    const jumlahInput = document.getElementById(`noncoffee${nonCoffeeNum}_jumlah`);
+    const jumlah = parseInt(jumlahInput.value, 10);
+    if (jumlah > 0) {
+        nonCoffeeList.push(`${cb.value} x${jumlah}`);
+    }
+});
 const pesananCoffee = coffeeList.length > 0 ? "%0APesanan Coffee: %20" + coffeeList.join(', ') : "";
+    const pesananNonCoffee = nonCoffeeList.length > 0 ? "%0APesanan Non Coffee: %20" + nonCoffeeList.join(', ') : "";
     const pesananPizza = pizzaList.length > 0 ? "%0APesanan Pizza: %20" + pizzaList.join(', ') : "";
     const pesananRicebowl = ricebowlList.length > 0 ? "%0APesanan Ricebowl: %20" + ricebowlList.join(', ') : "";
     const pesananSteak = steakList.length > 0 ? "%0APesanan Steak: %20" + steakList.join(', ') : "";
@@ -1205,6 +1235,7 @@ const pesananCoffee = coffeeList.length > 0 ? "%0APesanan Coffee: %20" + coffeeL
     const pesananSideMenu = sidemenuList.length > 0 ? "%0APesanan Side Menu: %20" + sidemenuList.join(', ') : "";
     const pesananDessert = dessertList.length > 0 ? "%0APesanan Dessert: %20" + dessertList.join(', ') : "";
     const pesananBeverages = beveragesList.length > 0 ? "%0APesanan Beverages: %20" + beveragesList.join(', ') : "";
+
 
     const tipePesanan = document.querySelector('input[name="tipe_pesanan"]:checked').value;
 const alamatText = tipePesanan === "Delivery" ? `\n ke Alamat: *${alamat}*` : "";
@@ -1221,7 +1252,8 @@ const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star
     pesananSideMenu +
     pesananDessert +
     pesananBeverages +
-     pesananCoffee +
+    pesananCoffee +
+    pesananNonCoffee +
     "%0ACatatan : " + message +
     "";
 
@@ -1238,7 +1270,8 @@ const url = "https://api.whatsapp.com/send?phone=" + tujuan + "&text=Halo%20Star
   {main: 'showSidemenu', detail: 'sidemenuDetail'},
   {main: 'showDessert', detail: 'dessertDetail'},
   {main: 'showBeverages', detail: 'beveragesDetail'},
-  {main: 'showCoffee', detail: 'coffeeDetail'}
+  {main: 'showCoffee', detail: 'coffeeDetail'},
+  {main: 'shownonCoffee', detail: 'nonCoffeeDetail'}
 ].forEach(pair => {
   const main = document.getElementById(pair.main);
   const detail = document.getElementById(pair.detail);
